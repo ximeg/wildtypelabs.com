@@ -23,9 +23,9 @@ I’m based in the San Francisco Bay Area and speak English, Russian, and German
 
 function md2html(markdown) {
   return (
-    <>
+    <div>
       <ReactMarkdown>{markdown}</ReactMarkdown>
-    </>
+    </div>
   )
 }
 
@@ -35,27 +35,22 @@ function App() {
   return (
     <>
       <section className="center">
-        <div>
           <h1>Roman Kiselev</h1>
           <h2>Wildtype Labs</h2>
-            {md2html(introText)}
-        </div>
+          {md2html(introText)}
       </section>
 
 
       <section className="center">
         <h2>Portfolio</h2>
-
         <PortfolioGrid />
       </section>
 
 
       <section className="center">
-        <div>
           <h2>Contact Us</h2>
           {md2html(contactText)}
           <ContactForm />
-        </div>
       </section>
     </>
   )

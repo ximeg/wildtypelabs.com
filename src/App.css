@@ -23,8 +23,8 @@
 }
 
 .contact-form {
-  width: 100%;
-  max-width: 560px;
+  max-width: 500px;
+  width: 40%;
   padding: 28px;
   margin: 0 auto;
   display: grid;
