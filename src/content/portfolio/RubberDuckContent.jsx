@@ -30,7 +30,7 @@ function RubberDuckContent() {
 
 const RubberDuckItem = {
   id: 'rubber-duck',
-  image: 'https://picsum.photos/seed/rubberduck/600/400',
+  image: 'https://www.shipducky.com/cdn/shop/products/Instagrampost-1a.jpg?v=1660097941&width=1946',
   projtype: '3D Experience',
   title: 'Rubber Duck',
   subtitle: 'A Google Model Viewer experience with an interactive 3D duck model.',
