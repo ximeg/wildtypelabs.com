@@ -6,8 +6,8 @@ import RubberDuckItem from '../content/portfolio/RubberDuckContent.jsx'
 
 export const portfolioItems = [
   SaberClipItem,
+  RubberDuckItem,
   FieldBeaconItem,
   TrailAnchorItem,
   AnchorGripItem,
-  RubberDuckItem,
 ]
