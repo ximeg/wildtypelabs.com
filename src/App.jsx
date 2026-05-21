@@ -1,5 +1,6 @@
 import './App.css'
 import PortfolioGrid from './components/PortfolioGrid.jsx'
+import ContactForm from './components/ContactForm.jsx'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
       <section className="center">
 
         <h2>Contact Us</h2>
-        <p>Email me</p>
+        <ContactForm />
 
       </section>
     </>
