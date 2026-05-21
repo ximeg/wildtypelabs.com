@@ -83,16 +83,19 @@ h1 {
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0 0 8px;
+  margin: 40px 0px 10px;
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
 p {
-  margin: 0;
+  width: 80%;
+  max-width: 800px;
+  margin: 12px auto;
 }
 
 code,
