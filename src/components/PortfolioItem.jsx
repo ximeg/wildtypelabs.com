@@ -39,7 +39,14 @@ function PortfolioItem({ projtype, title, subtitle, image, modalContent }) {
             className="portfolio-modal"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="portfolio-modal-header">
+            <div className="portfolio-modal-image-wrapper">
+              <img
+                src={image}
+                alt={title ?? 'Portfolio item header image'}
+                className="portfolio-modal-image"
+              />
+          </div>
+          <div className="portfolio-modal-header">
               <h2 id="portfolio-modal-title">{title}</h2>
               <button
                 type="button"
