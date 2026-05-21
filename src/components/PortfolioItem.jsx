@@ -1,7 +1,14 @@
 import { useState } from 'react'
 import './PortfolioItem.css'
 
-function PortfolioItem({ projtype, title, subtitle, image, modalContent }) {
+function PortfolioItem({ item }) {
+  const {
+    projtype,
+    title,
+    subtitle,
+    image,
+    modalComponent: ModalContent,
+  } = item
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -45,8 +52,8 @@ function PortfolioItem({ projtype, title, subtitle, image, modalContent }) {
                 alt={title ?? 'Portfolio item header image'}
                 className="portfolio-modal-image"
               />
-          </div>
-          <div className="portfolio-modal-header">
+            </div>
+            <div className="portfolio-modal-header">
               <h2 id="portfolio-modal-title">{title}</h2>
               <button
                 type="button"
@@ -57,7 +64,9 @@ function PortfolioItem({ projtype, title, subtitle, image, modalContent }) {
                 ×
               </button>
             </div>
-            <div className="portfolio-modal-body">{modalContent}</div>
+            <div className="portfolio-modal-body">
+              {ModalContent ? <ModalContent /> : null}
+            </div>
             <div className="portfolio-modal-footer">
               <button
                 type="button"
