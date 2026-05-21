@@ -161,6 +161,13 @@
   }
 }
 
+.video-wrapper {
+  width: 100%;
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .ticks {
   position: relative;
   width: 100%;
