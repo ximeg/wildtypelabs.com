@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 
-const trailAnchorMarkdown = `
+const trailAnchorMarkdown1 = `
 ## Trail Anchor
 
 Trail Anchor is an adjustable anchor concept that balances strength and portability. The design is meant to work across different surfaces while staying compact.
@@ -10,8 +10,19 @@ Trail Anchor is an adjustable anchor concept that balances strength and portabil
 It includes a **simple** locking mechanism so users can set the anchor once and trust it through repeated use.
 `
 
+const trailAnchorMarkdown2 = `
+## Second header
+More content
+`
+
 function TrailAnchorContent() {
-  return <ReactMarkdown>{trailAnchorMarkdown}</ReactMarkdown>
+  return (
+    <>
+      <ReactMarkdown>{trailAnchorMarkdown1}</ReactMarkdown>
+      <span style={{backgroundColor: '#ffff0010'}}><em>This is HTML</em></span>
+      <ReactMarkdown>{trailAnchorMarkdown2}</ReactMarkdown>
+    </>
+  )
 }
 
 const TrailAnchorItem = {
