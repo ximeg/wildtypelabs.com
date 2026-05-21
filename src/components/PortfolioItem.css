@@ -179,6 +179,13 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.portfolio-modal-body iframe {
+  width: 100%;
+  min-height: 320px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .portfolio-modal-footer {
   margin-top: 24px;
   text-align: right;

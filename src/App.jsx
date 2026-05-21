@@ -51,11 +51,11 @@ function App() {
 
 
       <section className="center">
-
-        <h2>Contact Us</h2>
-        {md2html(contactText)}
-        <ContactForm />
-
+        <div>
+          <h2>Contact Us</h2>
+          {md2html(contactText)}
+          <ContactForm />
+        </div>
       </section>
     </>
   )
