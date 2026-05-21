@@ -31,6 +31,7 @@ function App() {
         </button>
 
         <PortfolioItem
+          image="public/prtfol/saberclip.png"
           projtype="Rapid Prototyping"
           title="Saber Clip"
           subtitle="If you already have an avalanche probe, you
@@ -44,7 +45,6 @@ function App() {
                 It's made of Tough 1500 V2 resin, which is strong and durable enough to
                 withstand the forces of being heavily used.
               </p>
-              <img src="public/prtfol/saberclip.png" alt="Saber Clip" />
               <img src="https://lh3.googleusercontent.com/pw/AP1GczNSZERzUcj0nDi9hLnpFAXHczfwqds_FYxvbWeLz4MPix7-2epauCvyVSAK-Ip-38GFBip92tUmSmxu1M1fnXjpBc69l0mzpcRJwXd4gQvF3Val6v4kP4VUs9JiN719M66w7-tw1tNPxN6MwARD1pBG3Q=w1286-h1707-s-no-gm?authuser=0" alt="Saber Clip 3D printing" />
               <div className="video-wrapper">
                 <iframe

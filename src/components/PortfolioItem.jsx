@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './PortfolioItem.css'
 
-function PortfolioItem({ projtype, title, subtitle, modalContent }) {
+function PortfolioItem({ projtype, title, subtitle, image, modalContent }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -11,10 +11,19 @@ function PortfolioItem({ projtype, title, subtitle, modalContent }) {
         className="portfolio-item-card"
         onClick={() => setIsOpen(true)}
       >
-        <div className="portfolio-item-card-content">
-          <span className="portfolio-item-badge">{projtype}</span>
-          <h3>{title}</h3>
-          <p>{subtitle}</p>
+        <div className="portfolio-item-image-wrapper">
+          <img
+            src={image}
+            alt={title ?? 'Portfolio item image'}
+            className="portfolio-item-image"
+          />
+          <div className="portfolio-item-overlay">
+            <div className="portfolio-item-card-content">
+              <span className="portfolio-item-badge">{projtype}</span>
+              <h3>{title}</h3>
+              <p>{subtitle}</p>
+            </div>
+          </div>
         </div>
       </button>
 
